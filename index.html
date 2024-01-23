@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+
+<body>
+    <div id="header" class="hidden">
+        <nav>
+            <p class="logo"><span>P</span>RATIKSHA</p>
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <!-- <li><a type="button" class="toggle-button" onclick="toggleMode()">Too Dark?</a></li>-->
+                <i class="fas fa-solid fa-square-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-sharp fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+
+        <div class="container header-container">
+            <div class="header-text ">
+                <h1>Hi, I'm <span>Pratiksha</span> N S a <span class="multiple-text"></span></h1>
+                <p>FullStack developer who focuses on writing clean, elegant and efficient code.</p>
+                <div class="contact-left">
+                    <div class="social-icons">
+                        <a href="https://github.com/Pratiksha-NS"><i class="fa-brands fa-github"></i></a>                      
+                        <a href="https://www.linkedin.com/in/pratiksha-n-s-49b072294/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                    <a href="" download class="btn btn2 download">Download CV</a>
+                </div>
+            </div>
+
+            <div class="container-img">
+                <img src="images/cute-anime-girl-portrait-black-white-colors-sketch-style_739548-6001.avif" alt="girl"
+                    class="header-img">
+            </div>
+        </div>
+    </div>
+
+    <!-- about  -->
+
+    <div id="about" class="hidden ">
+        <div class="container">
+            <div class="about-container">
+                <div class="row">
+                    <div class="about-col-1 ">
+                        <img src="images/user.png" alt="girl" id="firstpic">
+                    </div>
+                    <div class="about-col-2 ">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>Recent graduate with a strong passion for developing scalable web applications and expertise
+                            across
+                            the full stack. Eager to contribute my skills to a company, where I can continue to grow and
+                            make
+                            impactful contributions.</p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                            <p class="tab-links" onclick="opentab('certifications')">Certification</p>
+
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Frontend</span><br>HTML, CSS , JavaScript, React, JQuery</li>
+                                <li><span>Backend</span><br>Node.Js, Express, API, PostgreSQL, MongoDB, Git, Github</li>
+                                <li><span>Others(Basic Knowlegde)</span><br>C, C++, Python, chatGPT, Figma</li>
+
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2021-2023:Mangalore University </span><br>Msc in Physics CGPA- 7.54</li>
+                                <li><span>2018-2021:St.Aloysius College</span><br>Bsc (PEM) SGPA- 90.12%</li>
+                                <li><span>2016-2018:Alvas College</span><br>PUC (PCME) SGPA- 93%</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="certifications">
+                            <ul>
+                                <li>The<span> Complete Web Development Bootcamp </span>by Angela Yu from Udemy<br></li>
+                                <li><span>Python Fundamentals for beginners</span> by GreatLearning<br></li>
+                                <li><span>C++ Course Learn the Essentials </span>by Scaler<br></li>
+                                <li><span>Excel Automatiom Using ChatGPT </span>by Simplilearn<br></li>
+                                <li><span>ChatGPT Prompt Engineering for Developers </span>by Deeplearning<br></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- projects  -->
+    <div id="portfolio" class="hidden">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/cravez.PNG" alt="foodapp">
+                    <div class="layer">
+                        <h3>Restaurant Food Delivery App</h3>
+                        <p>Cravez is a fully responsive MERN app that enables users to register and log in. Users can
+                            add food items
+                            to their cart, proceed to checkout, and also view their order history. </p>
+                        <a href="https://cravez.onrender.com"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="images/keeper app.PNG" alt="keeperapp">
+                    <div class="layer">
+                        <h3>Keeper App</h3>
+                        <p>The Keeper App is a MERN app that allows users to create, read and delete the notes. </p>
+                        <a href="https://keeper-app-frontend-n2ye.onrender.com/"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/emojipedia.PNG" alt="emoji">
+                    <div class="layer">
+                        <h3>React App</h3>
+                        <p>Emojipedia is a collection of 125 emojis, each accompanied by its name and meaning. </p>
+                        <a href="https://emoji-ntd6.onrender.com/"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/weather.PNG" alt="weather app">
+                    <div class="layer">
+                        <h3>Weather App</h3>
+                        <p>The weather app utilizes the OpenWeatherMap API to fetch weather details and employs EJS to
+                            handle data transmission.
+                        </p>
+                        <a href="https://weather-m1yt.onrender.com/"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./images/simon.PNG" alt="simon-game">
+                    <div class="layer">
+                        <h3>Simon Game</h3>
+                        <p>Crafted a dynamic Simon game with HTML, CSS, and jQuery, featuring colorful buttons, sound
+                            effects, and progressive levels</p>
+                        <a href="https://pratiksha-ns.github.io/simon-Game/"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./images/musicapp.PNG" alt="Music-player">
+                    <div class="layer">
+                        <h3>Music app</h3>
+                        <p>A JavaScript music app project that allows users to play, pause, and skip tracks, providing
+                            an interactive and enjoyable audio experience on the web page.</p>
+                        <a href="https://pratiksha-ns.github.io/Music-player/"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+            </div>
+            <a href="./projectlist/projectlist.html" class="btn see-more">See more</a>
+        </div>
+    </div>
+
+    <!--  --contact---  -->
+
+    <div id="contact" class="hidden">
+        <div class="container ">
+            <div class="row">
+                <div class="contact-left contact-info">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> pratiksha.n.suvarna@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 6361914672</p>
+                    <div class="social-icons">
+                        <a href="https://github.com/Pratiksha-NS"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/pratiksha-n-s-49b072294/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                       
+                    </div>
+                    <a href="" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form action="https://formspree.io/f/xgegeedj" method="POST" id="contactForm">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="text" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright ©️ pratiksha</p>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>
